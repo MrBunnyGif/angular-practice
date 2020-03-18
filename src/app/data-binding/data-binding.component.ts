@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-data-binding',
-  templateUrl: './data-binding.component.html',
-  styleUrls: ['./data-binding.component.scss']
+	selector: 'app-data-binding',
+	templateUrl: './data-binding.component.html',
+	styleUrls: ['./data-binding.component.scss']
 })
 export class DataBindingComponent implements OnInit {
+	numero: number;
 
-  constructor() { }
+	constructor() {}
+	ngOnInit(): void {}
 
-  ngOnInit(): void {
-  }
-
+	obtemNumero(vnumero:number){
+		this.numero = vnumero;
+	}
 }
